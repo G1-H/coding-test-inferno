@@ -1,0 +1,8 @@
+N = int(input())
+array = []
+for x in range(N // 4):
+    array.append("long")
+
+array.append("int")
+
+print(" ".join(array))
