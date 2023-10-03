@@ -1,4 +1,3 @@
-1
 # 문제 : N개의 정수 A[1], A[2], …, A[N]이 주어져 있을 때, 이 안에 X라는 정수가 존재하는지 알아내는 프로그램을 작성하시오.
 # 입력 : 첫째 줄에 자연수 N(1 ≤ N ≤ 100,000)이 주어진다. 다음 줄에는 N개의 정수 A[1], A[2], …, A[N]이 주어진다.
 #      다음 줄에는 M(1 ≤ M ≤ 100,000)이 주어진다. 다음 줄에는 M개의 수들이 주어지는데, 이 수들이 A안에 존재하는지 알아내면 된다.
@@ -80,7 +79,7 @@ for i in array_x:
 
 
 # 파이썬 이진 탐색 라이브러리 : bisect_right
-# bisect_right(array, x) -> x를 array 에 정렬을 유지하면서 넣었을 때, 가장 왼쪽 인덱스
+# bisect_right(array, x) -> x를 array 에 정렬을 유지하면서 넣었을 때, 가장 오른쪽 인덱스
 def is_include(array, x):
     clue = bisect_right(array, x)
     if clue == 0:
