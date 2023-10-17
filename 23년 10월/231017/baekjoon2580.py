@@ -73,6 +73,7 @@ def solution(idx):
         if checkRow(x, i) and checkCol(y, i) and checkBox(x, y, i):
             sdoku[x][y] = i
             solution(idx + 1)
+            sdoku[x][y] = 0
 
 
 solution(0)
